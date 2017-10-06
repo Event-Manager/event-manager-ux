@@ -26,16 +26,16 @@ class App extends Component {
         <TextField
           hintText="Responsable"
           floatingLabelText="Jane Doe"
-        />
+        /><br />
         <DatePicker hintText="Event date" mode="landscape" />
         <TimePicker
           hintText="10 minutes step"
           minutesStep={10}
-        />
+        /><br />
         <TextField
           hintText="Quantity of participants"
           floatingLabelText="40"
-        />
+        /><br />
         <SelectField
           floatingLabelText="Event type"
           value={1}
@@ -48,7 +48,6 @@ class App extends Component {
           <MenuItem value={5} primaryText="Weekly" />
         </SelectField>
         <br />
-
         <SelectField
           floatingLabelText="Office"
           value={1}
@@ -62,8 +61,7 @@ class App extends Component {
         </SelectField>
         <br />
 
-        <RaisedButton label="Submit" primary={true} />
-
+        <RaisedButton label="Submit" primary={true} /><br />
       </MuiThemeProvider>
     );
   }
